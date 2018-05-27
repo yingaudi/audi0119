@@ -1,0 +1,30 @@
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int x;
+	cin >> x;
+	int y = 2;
+	int z;
+
+	while (y < x)
+	{
+		z = x%y;//測試可不可以整除
+		if (z == 0)
+		{
+			cout << "No" << endl;
+			break;
+		}
+		{
+			y = y++;//用2,3,4,-1除
+		}
+		if (y == x)//如果只能被自己整除
+		{
+			cout << "Yes" << endl;
+		}
+	}
+	system("pause");
+	return 0;
+}
